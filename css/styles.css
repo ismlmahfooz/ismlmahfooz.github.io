@@ -7493,8 +7493,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
 }
 
 .pt-0 {
@@ -11298,9 +11298,26 @@ body {
   height: 100%;
 }
 
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+  .page-section-room {
+    padding: 8rem 15rem;
+  }
+}
+
 .page-section {
   padding: 8rem 0;
 }
+
+@media (max-width: 600px) {
+
+  .page-section-room {
+    padding: 8rem 0;
+  }
+}
+
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -11392,7 +11409,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/gif.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11458,18 +11475,13 @@ header.masthead h1, header.masthead .h1 {
 }
 
 
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
 
 body {
   margin:0;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
-}
+
 p {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
@@ -11563,3 +11575,4 @@ p {
     font-size:24px;
   }
 }
+
